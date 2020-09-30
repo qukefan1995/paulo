@@ -27,7 +27,7 @@
               String工具类、apache对象copy、poi、http、编解码工具、aliJson、validation、servlet
               pageHelper、jwt加解密，ali oss、MinIO、QrCode二维码） -->
         <dependency>
-            <groupId>com.helper</groupId>
+            <groupId>tech.xinke</groupId>
             <artifactId>xinke-java-sdk-core</artifactId>
             <version>0.0.6</version>
         </dependency>

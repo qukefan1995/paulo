@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration debug="false">
-    <conversionRule conversionWord="traceId" converterClass="com.helper.core.log.configuration.TraceIdConvert" />
+    <conversionRule conversionWord="traceId" converterClass="tech.xinke.core.log.configuration.TraceIdConvert" />
 
     <!-- 定义属性 -->
     <property name="LOG_HOME" value="C:/logs.log"/>

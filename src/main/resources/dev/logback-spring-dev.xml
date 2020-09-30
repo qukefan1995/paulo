@@ -3,7 +3,7 @@
     <!-- 定义属性 -->
     <property name="LOG_HOME" value="D:/logs.log"/>
 
-    <conversionRule conversionWord="traceId" converterClass="com.helper.core.log.configuration.TraceIdConvert" />
+    <conversionRule conversionWord="traceId" converterClass="tech.xinke.core.log.configuration.TraceIdConvert" />
 
     <!-- 控制台输出 -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
