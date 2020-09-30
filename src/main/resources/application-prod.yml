@@ -1,0 +1,89 @@
+#
+#
+# DEVELOPER
+#
+#
+server:
+  port: 3080
+spring:
+  datasource:
+    url: jdbc:postgresql://172.16.10.229:5432/lunara
+    username: qiaor
+    password: 123456
+  redis:
+    host: 172.16.10.230
+    port: 6379
+    password:
+    database: 11
+
+xinke:
+  logger:
+    level: debug
+    max-file-size: 10
+    max-save-day: 7
+    save-path: D:\logs.log
+  storage:
+    endpoint: http://172.16.10.204:7000
+    bucket-name: file
+    access-key-secret: Av1cjV0CDBb1gv532SS3
+    access-key: cobMxyKizJ
+    adaptive-storage: minio
+    token-expire-time:
+    role-arn:
+    version:
+    other:
+      test : test
+  dingtalk:
+    application-name: paulo
+    access-token: 4538d708d4a0a080ca99d4e07d70cc0cbfa615c7749d66302e7686bd0d9dc790
+    secret: SEC58720300a3a572f163c50f64cb4733c18f2c0fffa06ee18f473e1ebacd47eea0
+  thread:
+    core-size: 10
+    queue-size: 50
+    reject-level: abortpolicy
+    max-pool-size: 100
+
+  # SMS 短信
+sms:
+  product: Dysmsapi
+  domain: dysmsapi.aliyuncs.com
+  endpointName: cn-hangzhou
+  prefix: 麦当劳
+  operateVerifyTemp: SMS_185840011
+  realSend: true
+
+  # 权限相关配置
+auth:
+  # 是否开启验证
+  openToken: true
+  # 环境
+  env: DEV
+  # AccessToken过期时间-5小时-5*60*60(秒为单位)
+  accessTokenExpireTime: 18000
+  # 更新令牌时间,token有效期内更新,3小时-2*60*60(秒为单位)
+  refreshTokenCheckTime: 10800
+  # JWT认证加密私钥(Base64加密)
+  encryptJwtKey: cndzd0hyUzF3T2dPRXNyMVp5Mw==
+  # 默认初始密码
+  defaultPwd: hao123
+
+  # AES key
+aes:
+  key: hoYdxx*6A7HWrs4Mb}r9wPTm
+
+  # 是否开启swagger
+swagger:
+  open: true
+
+  # 是否开启签名验证
+sign:
+  open: true
+  signSecret: hN7RAbEKC9LgfZWQJl8EksKQXLcaD9AK
+
+  # 是否开启自动任务
+task:
+  open: true
+
+  #日志配置
+logging:
+  config: classpath:prod/logback-spring-prod.xml
