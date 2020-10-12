@@ -34,7 +34,7 @@ xinke:
     other:
       test : test
   dingtalk:
-    application-name: paulo
+    application-name: paulo-prod
     access-token: 4538d708d4a0a080ca99d4e07d70cc0cbfa615c7749d66302e7686bd0d9dc790
     secret: SEC58720300a3a572f163c50f64cb4733c18f2c0fffa06ee18f473e1ebacd47eea0
   thread:
